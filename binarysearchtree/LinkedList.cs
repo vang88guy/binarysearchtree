@@ -24,7 +24,7 @@ namespace binarysearchtree
                 return;
             }
             Node temp = start;
-            //Node parent;
+           
             while (true)
             {
                 if (data <= temp.data)
@@ -59,7 +59,7 @@ namespace binarysearchtree
         public void Search(int data) 
         {
             Node temp = start;
-            //Node parent;
+            
             while (true)
             {
                 if (data == temp.data)

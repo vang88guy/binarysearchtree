@@ -9,7 +9,6 @@ namespace binarysearchtree
     class Node
     {
         public int data;
-        Node link;
         public Node linkright;
         public Node linkleft;
 
@@ -17,14 +16,5 @@ namespace binarysearchtree
         {
             this.data = data;
         }
-        //public int item;
-        //public Node leftc;
-        //public Node rightc;
-        //public void display()
-        //{
-        //    Console.Write("[");
-        //    Console.Write(item);
-        //    Console.Write("]");
-        //}
     }
 }

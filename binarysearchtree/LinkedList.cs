@@ -62,20 +62,27 @@ namespace binarysearchtree
             
             while (true)
             {
-                if (data == temp.data)
+              
+                if (data < temp.data && temp.linkleft !=null)
+                {
+                    temp = temp.linkleft;
+                }
+
+                else if (data > temp.data && temp.linkright != null)
+                {
+                    temp = temp.linkright;
+                }
+                else if (data == temp.data)
                 {
                     Console.WriteLine("Found "+ temp.data);
                     break;                   
                 }
-                else if ( data < temp.data)
+                else 
                 {
-                    temp = temp.linkleft;
+                    Console.WriteLine("Not Found");
+                    break;
                 }
-                               
-                else if (data > temp.data)
-                {                   
-                        temp = temp.linkright;           
-                }
+                
             }
         }
     }
